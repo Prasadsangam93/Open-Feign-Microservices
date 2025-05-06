@@ -19,10 +19,8 @@ public class CustomerController {
     @PostMapping("/save")
     public ResponseEntity<Customer> saveCustomer(@RequestBody Customer customer) {
         return ResponseEntity.ok(customerService.saveCustomer(customer));
-    }
-    @GetMapping("/getAll")
-    public List<Customer> getAllCustomers() {
-        return customerService.getAllCustomers();
+
+
     }
     @GetMapping("/{id}")
     public Customer getCustomerById(@PathVariable Long id) {

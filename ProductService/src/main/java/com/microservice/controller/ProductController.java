@@ -22,11 +22,6 @@ public class ProductController {
         return ResponseEntity.ok(productService.saveProduct(product));
     }
 
-    @GetMapping("/getAll")
-    public List<Product> getAllProducts() {
-        return productService.getAllProducts();
-    }
-
     // Get products by list of IDs
     @PostMapping("/details")
     public List<Product> getProductsByIds(@RequestBody List<Long> ids) {

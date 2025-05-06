@@ -1,7 +1,6 @@
 package com.microservice.entity;
 
 
-import com.microservice.model.Product;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,9 +22,15 @@ public class Order {
 
     @ElementCollection  // Stores as a separate table of product IDs
     private List<Long> productIds;
-
     private Double totalAmount;
 
-    
+
+
+
+
+
+
+
+
 }
 
